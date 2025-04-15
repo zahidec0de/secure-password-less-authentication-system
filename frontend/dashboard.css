@@ -1,0 +1,87 @@
+body {
+    background: #1a2a44; /* Deep dark blue */
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    padding: 15px;
+}
+
+.card {
+    border-radius: 25px;
+    border: none;
+    background: #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Custom class to make the card narrower and shorter like a mobile view */
+.mobile-card {
+    max-width: 400px; /* Typical mobile width */
+    height: 500px; /* Typical mobile card height */
+    margin: 0 auto; /* Center the card */
+    overflow-y: auto; /* Allow scrolling if content overflows */
+}
+
+/* Ensure the card body fits within the height */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%; /* Ensure the card body takes up the full height of the card */
+}
+
+.card-title {
+    padding-top: 25px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.text-muted {
+    font-size: 0.90rem; /* Match the helper text size in index.html */
+    color: #777777;
+}
+
+.btn-danger {
+    margin-top: 10px;
+    background: linear-gradient(90deg, #dc3545, #b02a37);
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background 0.3s, transform 0.2s;
+    max-width: 30%;
+}
+
+.btn-danger:hover {
+    background: linear-gradient(90deg, #b02a37, #8b232f);
+    transform: scale(1.02);
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 576px) {
+    .mobile-card {
+        max-height: 400px; /* Slightly shorter for smaller mobile screens */
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+    }
+
+    .text-muted {
+        font-size: 0.8rem;
+    }
+
+    .btn-danger {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}
