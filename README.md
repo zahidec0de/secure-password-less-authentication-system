@@ -64,7 +64,7 @@ All logins are based on **Two-Factor Authentication (2FA)** using the user's **C
 - Cookie is deleted to end session.
 
 
-## 🛡️ Security Features
+## Security Features
 
 | Feature | Description |
 |--------|-------------|
@@ -76,12 +76,20 @@ All logins are based on **Two-Factor Authentication (2FA)** using the user's **C
 | **Input Validation** | Ensures valid CPR, emai
 
 
-## Setup
+# Secure Password-less Authentication — Setup Guide
+
 Follow the steps below to run the project locally.
 
-### 1. Clone the Repository
-
 ```bash
+# 1. Clone the Repository
 git clone https://github.com/your-username/secure-banking-auth.git
 cd secure-banking-auth
+
+# 2. Install Dependencies
+pip install -r requirements.txt
+
+# 3. Start the Backend Server
+cd backend
+python -m uvicorn app.main:app --host 127.0.0.1 --port 8000
+
 
