@@ -74,3 +74,14 @@ All logins are based on **Two-Factor Authentication (2FA)** using the user's **C
 | **JWT + Secure Cookies** | Short-lived tokens stored securely (not in localStorage). |
 | **Security Headers** | Prevents XSS, clickjacking, and MIME sniffing. |
 | **Input Validation** | Ensures valid CPR, emai
+
+
+## Setup
+Follow the steps below to run the project locally.
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/secure-banking-auth.git
+cd secure-banking-auth
+
